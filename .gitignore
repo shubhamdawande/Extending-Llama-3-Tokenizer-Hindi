@@ -1,0 +1,5 @@
+*.model
+*.vocab
+*.txt
+*.png
+*.json
