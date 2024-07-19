@@ -82,7 +82,3 @@ tokenizer.add_tokens(new_tokens)
 
 for text in texts:
     tokenize_text(text, tokenizer)
-
-print(get_token_id(tokenizer, 'Ġउस'))
-
-print(tokenizer.decode(tokenizer.encode(' उस')))
