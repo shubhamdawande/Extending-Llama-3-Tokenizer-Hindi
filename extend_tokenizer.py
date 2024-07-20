@@ -11,11 +11,11 @@ import regex as re
 def get_tokenizer(version=0):
     llama3_model_id = "meta-llama/Meta-Llama-3-8B"
     
-    # tokenizer 2: AutoTokenizer
+    # tokenizer 2: Huggingface AutoTokenizer
     if version == 0:
         tokenizer = AutoTokenizer.from_pretrained(llama3_model_id)
 
-    # tokenizer 1: Tokenizer lib
+    # tokenizer 1: Fast Tokenizer
     elif version == 1:
         tokenizer = Tokenizer.from_pretrained(llama3_model_id)
         tokenizer = PreTrainedTokenizerFast(tokenizer_object=tokenizer)
@@ -59,7 +59,7 @@ for text in texts:
 
 # Load 2nd tokenizer
 hi_spm = spm.SentencePieceProcessor()
-hi_spm.Load('./multilingual/hi_tokenizer/tokenizer.model')
+hi_spm.Load('./multilingual/hindi/hi_tokenizer/tokenizer.model')
 # vocab = [str(hi_spm.decode(i)) for i in range(len(hi_spm))]
 
 hindi_vocab = []
