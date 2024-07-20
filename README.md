@@ -43,7 +43,7 @@ Llama 3 tokenizer:
 ```
 Target Tokens: ['म', 'ैं', ' उस', 'े', ' एक', ' ऐस', 'ा', ' प', '्रस', '्त', 'ाव', ' द', 'ूँ', 'ग', 'ा', ' ज', 'िस', 'े', ' वह', ' अस', '्व', 'ीक', 'ार', ' नह', 'ीं', ' कर', ' सक', 'ेग', 'ा।']
 
-Target tokens produced: 30 Tokens\
+Target tokens produced: 30 Tokens
 Fertility Score ≈ 28/13 = 2.15 tokens per word
 ```
 
@@ -52,7 +52,7 @@ Extended tokenizer:
 ```
 Target Tokens: ['मैं', ' उसे', ' एक', ' ऐसा', ' प्रस्ताव', ' दू', 'ँ', 'गा', ' जिसे', ' वह', ' अस', '्वी', 'कार', ' नहीं', ' कर', ' सकेगा', '।']
 
-Target tokens produced: 18 Tokens\
+Target tokens produced: 18 Tokens
 Fertility ≈ 16/13 = 1.23 tokens per word
 ```
 
