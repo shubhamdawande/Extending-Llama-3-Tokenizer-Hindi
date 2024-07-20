@@ -42,10 +42,10 @@ def contains_english(text):
     return bool(re.search('[a-zA-Z]', text))
         
 texts = [
-    "I will make him an offer he can't refuse.",
-    "मैं उसे एक ऐसा प्रस्ताव दूँगा जिसे वह अस्वीकार नहीं कर सकेगा।",
+    # "I will make him an offer he can't refuse.",
+    # "मैं उसे एक ऐसा प्रस्ताव दूँगा जिसे वह अस्वीकार नहीं कर सकेगा।",
     "कर्मणयेवाधिकारस्ते मा फलेषु कदाचन।",
-    "समस्याएं हमारे जीवन मे बिना किसी वजह के नहीं आती। उनका आना इशारा है की हमें अपने जीवन मे कुछ बदलना है।"
+    # "आज के दुनिया में, प्रौद्योगिकी हमारे दैनिक जीवन का एक मौलिक हिस्सा बनती जा रही है।"
 ]
 
 # Load base tokenizer
@@ -80,3 +80,5 @@ tokenizer.add_tokens(new_tokens)
 
 for text in texts:
     tokenize_text(text, tokenizer)
+    
+tokenizer.save_pretrained('./tokenizer')
