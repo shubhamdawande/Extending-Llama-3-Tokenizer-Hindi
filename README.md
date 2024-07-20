@@ -65,3 +65,5 @@ Fertility ≈ 16/13 = 1.23 tokens per word
 - It makes more linguistically sensible splits: "प्रस्ताव" instead of "प", "्रस", "्त", "ाव"
 
 3. Diacritic Handling: The new tokenizer handles diacritical marks more effectively, often keeping them attached to the base character (e.g., "दू" instead of "द", "ूँ").
+
+Overall this helps in improving training and inference since with fewer tokens, more meaningful content can fit within the model's context window.
