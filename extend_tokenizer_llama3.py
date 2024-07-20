@@ -3,8 +3,6 @@ from transformers import PreTrainedTokenizerFast, AutoTokenizer
 from tokenizers.models import BPE
 from tokenizers.pre_tokenizers import Whitespace
 import sentencepiece as spm
-from tokenizers import pre_tokenizers
-from tokenizers.pre_tokenizers import PreTokenizer
 import regex as re
 
 
